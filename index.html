@@ -780,13 +780,128 @@ h6 {
             margin-bottom: 15px;
         }
 
-        /* FOOTER */
-        footer {
-            background-color: var(--dark-teal);
-            color: var(--white);
-            text-align: center;
-            padding: 35px 20px;
-        }
+        /* ================================
+   FOOTER
+================================ */
+
+.footer {
+    background-color: #1F5559;
+    color: var(--cream);
+    padding: 60px 6% 25px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr;
+    gap: 50px;
+    padding-bottom: 40px;
+}
+
+.footer-brand h2 {
+    color: var(--cream);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.footer-tagline {
+    color: var(--yellow);
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.footer-personality {
+    color: var(--light-teal);
+    font-family: 'Caveat', cursive;
+    font-size: 1.5rem;
+}
+
+.footer-links h3,
+.footer-connect h3 {
+    color: var(--yellow);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links a {
+    color: var(--cream);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--yellow);
+}
+
+.footer-connect p {
+    color: var(--cream);
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.footer-button {
+    display: inline-block;
+    background-color: var(--yellow);
+    color: var(--dark-teal);
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    transition: transform 0.3s ease;
+}
+
+.footer-button:hover {
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-top: 1px solid rgba(247, 244, 227, 0.25);
+    padding-top: 25px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: var(--light-teal);
+    font-size: 0.9rem;
+    margin: 10px 0;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .footer {
+        padding: 50px 25px 25px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        text-align: center;
+    }
+
+    .footer-links {
+        align-items: center;
+    }
+
+    .footer-brand h2 {
+        font-size: 1.5rem;
+    }
+
+}
 
         /* MOBILE FRIENDLY */
         @media (max-width: 600px) {
@@ -1181,11 +1296,68 @@ section#podcast.podcast .podcast-description {
     </main>
 
     <!-- FOOTER -->
-    <footer>
-        <p><strong>Rebooting Motherhood</strong></p>
-        <p>Real life. Real support. A fresh start.</p>
-        <p>&copy; 2026 Rebooting Motherhood</p>
-    </footer>
 
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <h2>Rebooting Motherhood</h2>
+
+            <p class="footer-tagline">
+                Real life. Real support. A fresh start.
+            </p>
+
+            <p class="footer-personality">
+                Fueled by coffee and the occasional
+                existential crisis.
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h3>Explore</h3>
+
+            <a href="#about">About</a>
+            <a href="#pillars">The Three Pillars</a>
+            <a href="#podcast">Podcast</a>
+            <a href="#resources">Resources</a>
+            <a href="#community">Community</a>
+
+        </div>
+
+        <div class="footer-connect">
+
+            <h3>Stay Connected</h3>
+
+            <p>
+                More coffee. More conversations.
+                More figuring it out together.
+            </p>
+
+            <a href="#community" class="footer-button">
+                Let's Reboot
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            &copy; 2026 Rebooting Motherhood.
+            Real life. Real support. A fresh start.
+        </p>
+
+        <p>
+            Made with ☕, 💛, and a whole lot of sarcasm.
+        </p>
+
+    </div>
+
+</footer>
 </body>
 </html>
