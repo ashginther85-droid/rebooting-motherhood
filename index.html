@@ -221,13 +221,15 @@ h6 {
 }
 
 .about-photo img {
-    width: 220px;
-    height: 220px;
+    width: 220px !important;
+    height: 220px !important;
+    max-width: 100%;
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid var(--light-teal);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
-}
+    display: block;
+    margin: 0 auto;
 }
        /* ================================
    THREE PILLARS SECTION
