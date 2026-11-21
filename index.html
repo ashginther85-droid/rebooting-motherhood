@@ -214,72 +214,118 @@ h6 {
     font-size: 1.3rem;
     margin-top: 40px;
 }
-        /* THREE PILLARS */
+       /* ================================
+   THREE PILLARS SECTION
+================================ */
 
 .pillars {
-    padding: 80px 8%;
-    background-color: var(--light-teal);
+    background-color: var(--cream);
+    padding: 80px 20px;
 }
 
 .pillars-container {
     max-width: 1200px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .pillars h2 {
-    text-align: center;
-    font-size: clamp(2rem, 4vw, 3rem);
     color: var(--dark-teal);
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
 .pillars-intro {
-    text-align: center;
     max-width: 750px;
     margin: 0 auto 50px;
     font-size: 1.2rem;
-    line-height: 1.7;
+    line-height: 1.8;
 }
 
 .pillar-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    margin-top: 40px;
 }
 
 .pillar-card {
-    background-color: var(--white);
-    padding: 35px;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 25px rgba(51, 67, 74, 0.08);
+}
+
+.pillar-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(51, 67, 74, 0.15);
+}
+
+.pillar-life {
+    background-color: var(--light-teal);
+}
+
+.pillar-reboot {
+    background-color: #ffffff;
+    border: 2px solid var(--teal);
+}
+
+.pillar-support {
+    background-color: var(--yellow);
+}
+
+.pillar-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 
 .pillar-card h3 {
     color: var(--dark-teal);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-bottom: 20px;
 }
 
 .pillar-card p {
-    line-height: 1.7;
-    margin-bottom: 25px;
+    color: var(--dark);
+    line-height: 1.8;
+    font-size: 1rem;
 }
 
-.pillar-link {
-    color: var(--teal);
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.pillar-link:hover {
+.pillar-card .pillar-tagline {
+    margin-top: 25px;
+    font-family: 'Caveat', cursive;
+    font-size: 1.6rem;
     color: var(--dark-teal);
-    text-decoration: underline;
 }
 
-@media (max-width: 768px) {
+/* Mobile Responsive Layout */
+
+@media (max-width: 900px) {
     .pillar-cards {
         grid-template-columns: 1fr;
+        max-width: 600px;
+        margin: 40px auto 0;
     }
+
+    .pillar-card {
+        padding: 35px 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .pillars {
+        padding: 60px 20px;
+    }
+
+    .pillars h2 {
+        font-size: 2rem;
+    }
+
+    .pillars-intro {
+        font-size: 1rem;
+    }
+}
 }
         /* PODCAST SECTION */
 
@@ -660,68 +706,59 @@ h6 {
 
     </div>
 </section>
-        <section id="pillars" class="pillars">
-
+       <section id="pillars" class="pillars">
     <div class="pillars-container">
 
-        <h2>What You'll Find Here</h2>
+        <h2>What Rebooting Motherhood Is All About</h2>
 
         <p class="pillars-intro">
-            Rebooting Motherhood is about real life,
-            finding yourself again, and remembering
-            that you don't have to do it alone.
+            Life is messy. Motherhood is complicated. And sometimes,
+            we all need a little reboot.
         </p>
 
         <div class="pillar-cards">
 
-            <div class="pillar-card">
+            <div class="pillar-card pillar-life">
+                <div class="pillar-icon">☕</div>
                 <h3>Real Life</h3>
-
                 <p>
-                    The messy, beautiful, exhausting,
-                    hilarious reality of motherhood.
-                    No filters. No pretending.
-                    Just real life.
+                    The messy, beautiful, exhausting, hilarious reality
+                    of motherhood. Caregiving, family, work, household
+                    chaos, and everything life throws at us.
                 </p>
-
-                <a href="#resources" class="pillar-link">
-                    Explore Real Life →
-                </a>
+                <p class="pillar-tagline">
+                    Because real life isn't always Pinterest-worthy.
+                </p>
             </div>
 
-            <div class="pillar-card">
+            <div class="pillar-card pillar-reboot">
+                <div class="pillar-icon">💪</div>
                 <h3>Reboot Yourself</h3>
-
                 <p>
-                    Your health, your goals, your
-                    confidence, your career, and
-                    rediscovering the person you are
-                    beyond motherhood.
+                    Your health, fitness, mental health, personal growth,
+                    and rediscovering who you are beyond the endless
+                    responsibilities.
                 </p>
-
-                <a href="#resources" class="pillar-link">
-                    Start Your Reboot →
-                </a>
+                <p class="pillar-tagline">
+                    You deserve to take care of yourself, too.
+                </p>
             </div>
 
-            <div class="pillar-card">
+            <div class="pillar-card pillar-support">
+                <div class="pillar-icon">🤝</div>
                 <h3>Don't Struggle Alone</h3>
-
                 <p>
-                    Support, community, resources,
-                    shared experiences, and reminders
-                    that asking for help is okay.
+                    Community, support, resources, and connecting with
+                    people who understand that life doesn't always go
+                    according to plan.
                 </p>
-
-                <a href="#resources" class="pillar-link">
-                    Find Your Support →
-                </a>
+                <p class="pillar-tagline">
+                    You don't have to do everything alone.
+                </p>
             </div>
 
         </div>
-
     </div>
-
 </section>
         <!-- PODCAST SECTION -->
 
