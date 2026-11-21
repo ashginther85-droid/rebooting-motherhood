@@ -327,66 +327,125 @@ h6 {
     }
 }
 }
-        /* PODCAST SECTION */
+   /* ================================
+   PODCAST SECTION
+================================ */
 
 .podcast {
-    padding: 80px 8%;
-    background-color: var(--cream);
-}
-
-.podcast-container {
-    max-width: 900px;
-    margin: 0 auto;
+    background: linear-gradient(
+        135deg,
+        var(--dark-teal),
+        #20585D
+    );
+    color: var(--cream);
+    padding: 100px 20px;
     text-align: center;
 }
 
-.podcast h2 {
-    color: var(--dark-teal);
-    font-size: clamp(2rem, 4vw, 3rem);
-    margin-bottom: 20px;
+.podcast-container {
+    max-width: 850px;
+    margin: 0 auto;
 }
 
-.podcast-tagline {
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: var(--teal);
-    margin-bottom: 40px;
-}
-
-.podcast p {
-    font-size: 1.1rem;
-    line-height: 1.8;
+.podcast-icon {
+    font-size: 4rem;
     margin-bottom: 25px;
 }
 
-.podcast-highlight {
-    font-weight: bold;
-    color: var(--dark-teal);
-    font-size: 1.3rem !important;
-    margin: 40px 0;
+.podcast-eyebrow {
+    color: var(--yellow);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.podcast h2 {
+    color: var(--cream);
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.25;
+    margin-bottom: 30px;
+}
+
+.podcast-description {
+    color: var(--cream);
+    font-size: 1.2rem;
+    line-height: 1.9;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.podcast-personality {
+    color: var(--yellow);
+    font-family: 'Caveat', cursive;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 35px 0;
 }
 
 .podcast-coming-soon {
-    margin-top: 50px;
-    padding: 40px;
-    background-color: var(--light-teal);
-    border-radius: 15px;
-}
-
-.podcast-coming-soon span {
-    font-size: 3rem;
-}
-
-.podcast-coming-soon p:first-of-type {
-    font-size: 1.5rem;
-    font-weight: bold;
+    display: inline-block;
+    background-color: var(--yellow);
     color: var(--dark-teal);
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin: 20px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
-.podcast-coming-soon p:last-of-type {
-    margin-bottom: 0;
+.podcast-bottom {
+    color: var(--light-teal);
+    font-family: 'Caveat', cursive;
+    font-size: 1.8rem;
+    margin-top: 35px;
 }
-</section>
+
+/* Mobile Responsive Design */
+
+@media (max-width: 768px) {
+    .podcast {
+        padding: 70px 20px;
+    }
+
+    .podcast h2 {
+        font-size: 2.5rem;
+    }
+
+    .podcast-description {
+        font-size: 1.05rem;
+    }
+
+    .podcast-personality {
+        font-size: 1.7rem;
+    }
+
+    .podcast-bottom {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .podcast h2 {
+        font-size: 2rem;
+    }
+
+    .podcast-eyebrow {
+        font-size: 0.75rem;
+        letter-spacing: 2px;
+    }
+
+    .podcast-icon {
+        font-size: 3rem;
+    }
+}
         /* RESOURCES SECTION */
 
 .resources {
@@ -763,53 +822,35 @@ h6 {
         <!-- PODCAST SECTION -->
 
 <section id="podcast" class="podcast">
-
     <div class="podcast-container">
 
-        <h2>🎙️ Rebooting Motherhood: The Podcast</h2>
+        <div class="podcast-icon">🎙️</div>
 
-        <p class="podcast-tagline">
-            Real conversations. Real chaos. Real life.
+        <p class="podcast-eyebrow">THE REBOOTING MOTHERHOOD PODCAST</p>
+
+        <h2>Real conversations.<br>Real chaos.<br>Real life.</h2>
+
+        <p class="podcast-description">
+            Motherhood, mental health, special needs parenting,
+            personal growth, fitness, work, relationships, and
+            all the things we don't always talk about.
         </p>
 
-        <p>
-            Life doesn't come with a user manual, and motherhood
-            definitely didn't include a troubleshooting guide.
-        </p>
-
-        <p>
-            Join Ashley for conversations about motherhood,
-            special needs parenting, health, fitness, mental health,
-            personal growth, career, relationships, and all the
-            wonderfully chaotic things that happen along the way.
-        </p>
-
-        <p>
-            Some episodes might make you laugh. Some might make
-            you think. Some might remind you that you're not the
-            only one struggling.
-        </p>
-
-        <p>
-            And some? Well, we're just going to talk about the
-            things nobody seems to want to talk about.
-        </p>
-
-        <p class="podcast-highlight">
+        <p class="podcast-personality">
             Fueled by coffee, powered by sarcasm,
             and always a work in progress.
         </p>
 
         <div class="podcast-coming-soon">
-            <span>🎧</span>
-            <p>Coming Soon</p>
-            <p>
-                Grab your coffee and join the conversation.
-            </p>
+            <span>COMING SOON</span>
         </div>
 
-    </div>
+        <p class="podcast-bottom">
+            Because sometimes you just need to know
+            you're not the only one.
+        </p>
 
+    </div>
 </section>
         <!-- RESOURCES SECTION -->
 
