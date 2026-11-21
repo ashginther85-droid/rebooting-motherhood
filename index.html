@@ -166,6 +166,73 @@
     font-size: 1.3rem;
     margin-top: 40px;
 }
+        /* THREE PILLARS */
+
+.pillars {
+    padding: 80px 8%;
+    background-color: var(--light-teal);
+}
+
+.pillars-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pillars h2 {
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: var(--dark-teal);
+    margin-bottom: 20px;
+}
+
+.pillars-intro {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 50px;
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+.pillar-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.pillar-card {
+    background-color: var(--white);
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.pillar-card h3 {
+    color: var(--dark-teal);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.pillar-card p {
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.pillar-link {
+    color: var(--teal);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.pillar-link:hover {
+    color: var(--dark-teal);
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .pillar-cards {
+        grid-template-columns: 1fr;
+    }
+}
 
         /* CONTENT SECTIONS */
         section {
@@ -350,6 +417,69 @@
         </p>
 
     </div>
+</section>
+        <section id="pillars" class="pillars">
+
+    <div class="pillars-container">
+
+        <h2>What You'll Find Here</h2>
+
+        <p class="pillars-intro">
+            Rebooting Motherhood is about real life,
+            finding yourself again, and remembering
+            that you don't have to do it alone.
+        </p>
+
+        <div class="pillar-cards">
+
+            <div class="pillar-card">
+                <h3>Real Life</h3>
+
+                <p>
+                    The messy, beautiful, exhausting,
+                    hilarious reality of motherhood.
+                    No filters. No pretending.
+                    Just real life.
+                </p>
+
+                <a href="#resources" class="pillar-link">
+                    Explore Real Life →
+                </a>
+            </div>
+
+            <div class="pillar-card">
+                <h3>Reboot Yourself</h3>
+
+                <p>
+                    Your health, your goals, your
+                    confidence, your career, and
+                    rediscovering the person you are
+                    beyond motherhood.
+                </p>
+
+                <a href="#resources" class="pillar-link">
+                    Start Your Reboot →
+                </a>
+            </div>
+
+            <div class="pillar-card">
+                <h3>Don't Struggle Alone</h3>
+
+                <p>
+                    Support, community, resources,
+                    shared experiences, and reminders
+                    that asking for help is okay.
+                </p>
+
+                <a href="#resources" class="pillar-link">
+                    Find Your Support →
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
         <!-- COMMUNITY -->
